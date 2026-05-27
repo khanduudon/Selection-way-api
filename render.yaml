@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: spidy-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ENC_KEY
+        value: 12345678901234567890123456789012
+      - key: PORT
+        value: 3000
